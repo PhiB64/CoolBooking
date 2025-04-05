@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Structure de page*/
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  background-color: #ffffff;
+  height: 17vh;
+  width: 100vw;
+}
+
+#container1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+#container2 {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: right;
+  align-items: end;
+}
+
+main {
+  height: 73vh;
+  width: 100vw;
+  background-image: url(/Fond\ Mocha.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #946f5d;
+}
+#container3 {
+  display: flex;
+  height: 50%;
+  width: 100vw;
+  flex-direction: column;
+  align-items: end;
+}
+
+#container4 {
+  display: flex;
+  height: 50%;
+  width: 100vw;
+  line-height: 40px;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: end;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/*Polices*/
+
+h1 {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+h3 {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+}
+h5 {
+  font-family: "Quicksand", sans-serif;
+
+  /*Eléments texte de la page*/
+}
+#titre1 {
+  color: #7b5c4d;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+#soustitre {
+  color: #7b5c4d;
+  font-size: 15px;
+  padding-left: 20px;
+}
+#titre2 {
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 2px #000000a2);
+  position: relative;
+  margin-right: 250px;
+  margin-top: 55px;
+  font-size: 50px;
+}
+#accroche1 {
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 2px #000000a2);
+  padding-right: 60px;
+  font-size: 40px;
+}
+#accroche2 {
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 2px #000000a2);
+  margin-left: 60px;
+  font-size: 32px;
+}
+#textefooter {
+  font-size: 15px;
+  color: #7b5c4d;
+}
+
+/*Boutons de la page*/
+
+#bouton1 {
+  width: clamp(150px, 80%, 500px);
+  height: 50px;
+  background-color: #946f5d;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 60px;
+}
+
+#bouton2 {
+  display: flex;
+  width: clamp(200px, 80%, 600px);
+  height: 80px;
+  background-color: #ffffff;
+  color: #946f5d;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+#bouton3 {
+  display: flex;
+  background-color: #946f5d;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  width: clamp(40px, 80%, 160px);
+  font-size: 25px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header,
+  main,
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #bouton1 {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  #container1,
+  #container2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titre2,
+  #accroche1,
+  #accroche2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
