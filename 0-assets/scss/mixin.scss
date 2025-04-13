@@ -1,0 +1,51 @@
+// mixin
+
+@mixin btnmarron {
+  width: 200px;
+  height: 50px;
+  background-color: #946f5d;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #644739;
+    cursor: pointer;
+  }
+}
+
+@mixin btnblanc {
+  width: 200px;
+  height: 60px;
+  background-color: #ffffff;
+  color: #946f5d;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+  }
+}
+@mixin formul1 {
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: $secondary-color;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  height: 40px;
+
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+  }
+}

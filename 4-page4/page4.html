@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/4-page4/page4.css" />
+    <title>Accueil</title>
+  </head>
+  <body>
+    <header>
+      <div class="box1">
+        <div class="title1"><h1>CoolBooking.fr</h1></div>
+        <div class="st">
+          <h2>Vos locations de vacances moins chères</h2>
+        </div>
+      </div>
+      <div class="box2">
+        <a href="http://127.0.0.1:5501/2-page2/page2.html"
+          ><input class="btn1" type="button" value="Accueil"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <div class="box3">
+        <div class="p1">
+          <h4>Je crée mon compte</h4>
+        </div>
+        <br /><br />
+        <div class="photo">
+          <img src="/0-assets/images/download.png" alt="profil" />
+        </div>
+        <div><p>Insérez une photo</p></div>
+      </div>
+      <div class="box4">
+        <div class="checkbox1">
+          <label for="Propriétaire">Propriétaire</label>
+          <input
+            type="checkbox"
+            id="Propriétaire"
+            name="Propriétaire"
+            value="Propriétaire"
+          />
+          <label for="Locataire">Locataire</label>
+          <input
+            type="checkbox"
+            id="Locataire"
+            name="Locataire"
+            value="Locataire"
+          />
+        </div>
+        <br />
+        <form class="form1">
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            pattern="[A-Za-zÀ-ÖØ-öø-ÿ'-]+"
+            title="Le nom ne peut contenir que des lettres, des traits d'union et des espaces"
+            placeholder="Nom"
+          />
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            pattern="[A-Za-zÀ-ÖØ-öø-ÿ'-]+"
+            title="Le nom ne peut contenir que des lettres, des traits d'union et des espaces"
+            placeholder="Prénom"
+            required
+          />
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            pattern="[0-9]{10}"
+            title="Le numéro doit contenir 10 chiffres"
+            placeholder="Téléphone"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+            title="Ce champ doit contenir un adresse Email valide"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+            title="Doit contenir 8 caractères au minimun avec une minuscule, une majuscule et un caractère spécial au minimum"
+            placeholder="Mot de passe"
+            required
+          />
+          <input
+            type="password"
+            id="confirmpassword"
+            name="confirmpassword"
+            title="Doit contenir le même mot de passe"
+            placeholder="Vérification du mot de passe"
+            required
+          />
+          <button type="submit">Valider</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="textf"><h2>Aidez-nous à garder ce site gratuit</h2></div>
+      <a href="http://127.0.0.1:5501/2-page2/page2.html"
+        ><input class="btn3" type="button" value="Je donne"
+      /></a>
+    </footer>
+  </body>
+</html>

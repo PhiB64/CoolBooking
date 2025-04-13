@@ -1,0 +1,254 @@
+@import "../../CoolBooking/0-assets/scss/global.scss";
+
+.box3 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 30px;
+}
+
+.box4 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: end;
+}
+
+.title1 {
+  color: #7b5c4d;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.st {
+  color: #7b5c4d;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.title2 {
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
+  font-size: 50px;
+  padding-right: 300px;
+}
+
+.p1 {
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
+  font-size: 40px;
+  padding-right: 110px;
+}
+
+.p2 {
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
+  font-size: 32px;
+  padding-left: 180px;
+}
+
+.textf {
+  font-size: 15px;
+  color: #7b5c4d;
+}
+
+/*Boutons de la page*/
+.btn1 {
+  @include btnmarron;
+  width: 500px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+
+.btn2 {
+  @include btnblanc;
+  width: 600px;
+  margin-left: 180px;
+  margin-bottom: 50px;
+}
+
+.btn3 {
+  @include btnmarron;
+  width: 160px;
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: 20%;
+    width: 100vw;
+  }
+  main {
+    height: 75%;
+    background-color: rgba(148, 111, 93, 0.7137254902);
+    padding: 0;
+    margin: 0;
+  }
+  footer {
+    height: 10%;
+  }
+  .btn1 {
+    width: 450px;
+    font-size: 25px;
+    height: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .btn2 {
+    width: 450px;
+    font-size: 25px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 300px;
+  }
+  .btn3 {
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+  }
+  .title1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .title2,
+  .st,
+  .textf,
+  .p2 {
+    display: none;
+  }
+  .p1 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .box1 {
+    width: 100vw;
+    height: 60%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .box2 {
+    width: 100vw;
+    height: 40%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .box3 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .box4 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    flex-direction: column;
+    height: 15%;
+    width: 100vw;
+  }
+  main {
+    height: 75%;
+    background-color: rgba(148, 111, 93, 0.7137254902);
+    padding: 0;
+    margin: 0;
+  }
+  footer {
+    height: 10%;
+  }
+  .btn1 {
+    width: 300px;
+    font-size: 20px;
+    height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .btn2 {
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 350px;
+  }
+  .btn3 {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+  }
+  .title1 {
+    font-size: 20px;
+  }
+  .title2,
+  .st,
+  .textf,
+  .p2 {
+    display: none;
+  }
+  .p1 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .box1 {
+    width: 100vw;
+    height: 60%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .box2 {
+    width: 100vw;
+    height: 40%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .box3 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .box4 {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
