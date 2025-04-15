@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/4-page4/page4.css" />
-    <title>Accueil</title>
+    <title>Inscription</title>
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="box2">
-        <a href="http://127.0.0.1:5501/2-page2/page2.html"
+        <a href="http://127.0.0.1:5501/1-page1/page1.html"
           ><input class="btn1" type="button" value="Accueil"
         /></a>
       </div>
@@ -57,13 +57,14 @@
             pattern="[A-Za-zÀ-ÖØ-öø-ÿ'-]+"
             title="Le nom ne peut contenir que des lettres, des traits d'union et des espaces"
             placeholder="Nom"
+            required
           />
           <input
             type="text"
             id="firstname"
             name="firstname"
             pattern="[A-Za-zÀ-ÖØ-öø-ÿ'-]+"
-            title="Le nom ne peut contenir que des lettres, des traits d'union et des espaces"
+            title="Le prénom ne peut contenir que des lettres, des traits d'union et des espaces"
             placeholder="Prénom"
             required
           />
@@ -90,7 +91,7 @@
             id="password"
             name="password"
             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
-            title="Doit contenir 8 caractères au minimun avec une minuscule, une majuscule et un caractère spécial au minimum"
+            title="Doit contenir 8 caractères minimun avec 1 minuscule, 1 majuscule et 1 caractère spécial au minimum"
             placeholder="Mot de passe"
             required
           />
@@ -98,7 +99,7 @@
             type="password"
             id="confirmpassword"
             name="confirmpassword"
-            title="Doit contenir le même mot de passe"
+            title="Retaper le mot de passe"
             placeholder="Vérification du mot de passe"
             required
           />
