@@ -70,6 +70,7 @@ h1 {
 
 h2 {
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 
 h3 {
@@ -80,11 +81,12 @@ h3 {
 
 h4 {
   font-family: "Quicksand", sans-serif;
-  font-weight: lighter;
+  font-weight: 600;
 }
 
 h5 {
   font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   /*Eléments texte de la page*/
 }
 
@@ -123,4 +125,4 @@ h5 {
 a {
   color: inherit;
   text-decoration: none;
-} /*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */

@@ -75,6 +75,7 @@ form {
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   gap: 20px;
 }
 ::placeholder {
@@ -93,6 +94,7 @@ form {
 }
 p {
   font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   color: #ffffff;
   font-size: 16px;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));

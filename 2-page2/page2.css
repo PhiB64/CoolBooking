@@ -70,6 +70,7 @@ h1 {
 
 h2 {
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 
 h3 {
@@ -80,11 +81,12 @@ h3 {
 
 h4 {
   font-family: "Quicksand", sans-serif;
-  font-weight: lighter;
+  font-weight: 600;
 }
 
 h5 {
   font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   /*Eléments texte de la page*/
 }
 
@@ -129,6 +131,8 @@ a {
   width: 200px;
   height: 50px;
   background-color: #946f5d;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -146,6 +150,8 @@ a {
   width: 200px;
   height: 50px;
   background-color: #946f5d;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   color: #ffffff;
   border: none;
   border-radius: 20px;
