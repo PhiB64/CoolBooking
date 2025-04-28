@@ -12,11 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fonction de validation
   function validateForm() {
-    const nameRegex = /^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$/;
-    const phoneRegex = /^[0-9]{10}$/;
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const passwordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,50}$/;
+    const phoneRegex = /^(?:\+33|0)[1-9](?:[-. ]?\d{2}){4}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
 
     const lastname = document.getElementById("lastname").value;
     const firstname = document.getElementById("firstname").value;
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return false;
     }
     if (!phoneRegex.test(telephone)) {
-      alert("Le numéro de téléphone doit contenir 10 chiffres.");
+      alert("Veuillez entrer un numéro valide.");
       return false;
     }
     if (!emailRegex.test(email)) {

@@ -305,13 +305,14 @@ form {
 
 .checkboxes {
   display: flex;
+  gap: 20px;
   margin-right: 350px;
 }
 
 .checkbox1,
 .checkbox2 {
-  margin-top: 100px;
-  margin-bottom: 10px;
+  position: relative;
+  top: 20px;
   align-items: center;
   width: 200px;
   display: flex;
