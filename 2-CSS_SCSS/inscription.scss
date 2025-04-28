@@ -35,7 +35,6 @@ main {
     width: 50%;
     height: 100%;
     flex-direction: column;
-    align-items: center;
 
     input,
     button {
@@ -54,13 +53,14 @@ input {
 }
 
 form {
-  margin-right: 200px;
-  margin-bottom: 100px;
-  width: 50%;
+  height: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: flex-start;
   align-items: end;
+  padding-bottom: 70px;
 }
 
 #Locataire,
@@ -69,13 +69,14 @@ form {
 }
 .checkboxes {
   display: flex;
+  height: 40%;
+  width: 100%;
   gap: 20px;
-  margin-right: 350px;
+  align-items: flex-end;
+  padding-left: 50px;
 }
 .checkbox1,
 .checkbox2 {
-  position: relative;
-  top: 20px;
   align-items: center;
   width: 200px;
   display: flex;
@@ -85,7 +86,7 @@ form {
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  gap: 20px;
+  padding-bottom: 20px;
 }
 ::placeholder {
   color: $secondary-color;
