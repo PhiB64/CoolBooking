@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="page4.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Jockey+One&display=swap");
-    </style>
+    <link rel="stylesheet" href="/2-CSS_SCSS/inscription.css" />
     <title>Inscription</title>
   </head>
   <body>
     <header>
       <div class="box1">
         <div class="title1"><h1>CoolBooking.fr</h1></div>
-        <div class="st">
-          <h2>Vos locations de vacances moins chères</h2>
-        </div>
+        <div class="st"><h2>Vos locations de vacances moins chères</h2></div>
       </div>
       <div class="box2">
         <a href="/index.html"
@@ -26,34 +20,43 @@
     </header>
     <main>
       <div class="box3">
-        <div class="p1">
-          <h4>Je crée mon compte</h4>
-        </div>
+        <div class="p1"><h4>Je crée mon compte</h4></div>
         <br /><br />
-        <div class="photo">
+        <div class="image">
           <img
+            id="image"
             src="https://res.cloudinary.com/dwkyezu2u/image/upload/v1745506223/download_zspjbi.png"
             alt="profil"
+          />
+          <input
+            type="file"
+            id="newImage"
+            accept="image/*"
+            style="display: none"
           />
         </div>
         <div><p>Insérez une photo</p></div>
       </div>
       <div class="box4">
-        <div class="checkbox1">
-          <label for="Propriétaire">Propriétaire</label>
-          <input
-            type="checkbox"
-            id="Propriétaire"
-            name="Propriétaire"
-            value="Propriétaire"
-          />
-          <label for="Locataire">Locataire</label>
-          <input
-            type="checkbox"
-            id="Locataire"
-            name="Locataire"
-            value="Locataire"
-          />
+        <div class="checkboxes">
+          <div class="checkbox1">
+            <label for="Propriétaire">Propriétaire</label>
+            <input
+              type="checkbox"
+              id="Propriétaire"
+              name="Propriétaire"
+              value="Propriétaire"
+            />
+          </div>
+          <div class="checkbox2">
+            <label for="Locataire">Locataire</label>
+            <input
+              type="checkbox"
+              id="Locataire"
+              name="Locataire"
+              value="Locataire"
+            />
+          </div>
         </div>
         <br />
         <form class="form1">
@@ -61,8 +64,6 @@
             type="text"
             id="lastname"
             name="lastname"
-            pattern="[A-Za-zÀ-ÖØ-öø-ÿ'-]+"
-            title="Le nom ne peut contenir que des lettres, des traits d'union et des espaces"
             placeholder="Nom"
             required
           />
@@ -70,8 +71,6 @@
             type="text"
             id="firstname"
             name="firstname"
-            pattern="[A-Za-zÀ-ÖØ-öø-ÿ'-]+"
-            title="Le prénom ne peut contenir que des lettres, des traits d'union et des espaces"
             placeholder="Prénom"
             required
           />
@@ -79,8 +78,6 @@
             type="tel"
             id="telephone"
             name="telephone"
-            pattern="[0-9]{10}"
-            title="Le numéro doit contenir 10 chiffres"
             placeholder="Téléphone"
             required
           />
@@ -88,8 +85,6 @@
             type="email"
             id="email"
             name="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
-            title="Ce champ doit contenir un adresse Email valide"
             placeholder="Email"
             required
           />
@@ -97,8 +92,6 @@
             type="password"
             id="password"
             name="password"
-            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
-            title="Doit contenir 8 caractères minimun avec 1 minuscule, 1 majuscule et 1 caractère spécial au minimum"
             placeholder="Mot de passe"
             required
           />
@@ -106,7 +99,6 @@
             type="password"
             id="confirmpassword"
             name="confirmpassword"
-            title="Retaper le mot de passe"
             placeholder="Vérification du mot de passe"
             required
           />
@@ -116,9 +108,10 @@
     </main>
     <footer>
       <div class="textf"><h2>Aidez-nous à garder ce site gratuit</h2></div>
-      <a href="/2-Menu locataire/page2.html"
+      <a href="/index.html"
         ><input class="btn3" type="button" value="Je donne"
       /></a>
     </footer>
   </body>
+  <script src="/3-JS/inscrition.js"></script>
 </html>
