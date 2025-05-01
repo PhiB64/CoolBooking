@@ -19,11 +19,11 @@
   justify-content: end;
 }
 
-.title1 {
-  color: #7b5c4d;
-  font-size: 25px;
-  padding-left: 20px;
-}
+// .title1 {
+//   color: #7b5c4d;
+//   font-size: 25px;
+//   padding-left: 20px;
+// }
 
 .title2 {
   color: #ffffff;
@@ -32,36 +32,43 @@
   padding-right: 350px;
 }
 
-.p1 {
-  color: #ffffff;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
-  font-size: 40px;
-  padding-right: 110px;
-}
+// .st {
+//   color: #7b5c4d;
+//   font-size: 15px;
+//   padding-left: 20px;
+//   padding-bottom: 10px;
+// }
 
-.p2 {
-  color: #ffffff;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
-  font-size: 32px;
-  padding-left: 180px;
-}
+// .p1 {
+//   color: #ffffff;
+//   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
+//   font-size: 40px;
+//   padding-right: 110px;
+// }
 
-.textf {
-  font-size: 15px;
-  color: #7b5c4d;
-}
+// .p2 {
+//   color: #ffffff;
+//   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
+//   font-size: 32px;
+//   padding-left: 180px;
+// }
+
+// .textf {
+//   font-size: 15px;
+//   color: #7b5c4d;
+// }
 
 /*Boutons de la page*/
 .btn1 {
   @include btnmarron;
-  width: 500px;
+  width: 450px;
   margin-bottom: 20px;
   margin-right: 100px;
 }
 
 .btn2 {
   @include btnblanc;
-  width: 600px;
+  width: 550px;
   margin-left: 180px;
   margin-bottom: 50px;
 }
@@ -72,15 +79,72 @@
 }
 
 /*Media Queries*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
+header {
+  height: 15%;
+  width: 100vw;
+}
+main {
+  height: 75%;
+  width: 100vw;
+}
+footer {
+  height: 10%;
+  width: 100vw;
+}
+.btn1 {
+  width: 380px;
+  font-size: 23px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.btn2 {
+  width: 450px;
+  font-size: 24px;
+  height: 60px;
+}
+.btn3 {
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  align-items: center;
+}
+.title1 {
+  font-size: 23px;
+}
+.st,
+.textf {
+  font-size: 12px;
+}
+.title2 {
+  font-size: 45px;
+  padding: 0;
+  margin-right: 380px;
+}
+
+.p1 {
+  font-size: 40px;
+}
+.p2 {
+  font-size: 30px;
+}
+
+@media (max-width: 850px) {
+  body {
+    overflow: hidden;
+  }
   header {
     flex-direction: column;
     height: 20%;
     width: 100vw;
   }
   main {
-    height: 75%;
-    background-color: rgba(148, 111, 93, 0.7137254902);
+    height: 70%;
+    background-color: rgba(148, 111, 93, 0.596);
     padding: 0;
     margin: 0;
   }
@@ -88,7 +152,7 @@
     height: 10%;
   }
   .btn1 {
-    width: 450px;
+    width: 400px;
     font-size: 25px;
     height: 50px;
     margin: 0;
@@ -97,7 +161,7 @@
   .btn2 {
     width: 450px;
     font-size: 25px;
-    height: 80px;
+    height: 65px;
     padding: 0;
     margin: 0;
     margin-bottom: 300px;
@@ -106,7 +170,7 @@
     margin: 0;
     padding: 0;
     width: 120px;
-    height: 50px;
+    height: 40px;
     font-size: 20px;
     align-items: center;
   }
@@ -123,7 +187,7 @@
   }
   .p1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 50px;
     margin: 0;
     padding: 0;
@@ -161,27 +225,17 @@
   }
 }
 @media (max-width: 425px) {
-  header {
-    flex-direction: column;
-    height: 15%;
-    width: 100vw;
-  }
-  main {
-    height: 75%;
-    background-color: rgba(148, 111, 93, 0.7137254902);
-    padding: 0;
-    margin: 0;
-  }
-  footer {
-    height: 10%;
+  body {
+    overflow: hidden;
   }
   .btn1 {
-    width: 300px;
+    width: 350px;
     font-size: 20px;
-    height: 40px;
+    height: 50px;
     margin: 0;
     margin-bottom: 10px;
   }
+
   .btn2 {
     width: 350px;
     height: 60px;
@@ -193,8 +247,8 @@
   .btn3 {
     margin: 0;
     padding: 0;
-    width: 100px;
-    height: 50px;
+    width: 110px;
+    height: 40px;
     font-size: 20px;
     align-items: center;
   }
@@ -243,5 +297,41 @@
     height: 100%;
     align-items: center;
     margin-top: 20px;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    header {
+      height: 15%;
+    }
+    main {
+      height: 75%;
+    }
+
+    overflow: hidden;
+    .btn1 {
+      width: 300px;
+      font-size: 18px;
+      height: 40px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .btn2 {
+      width: 300px;
+      height: 50px;
+      font-size: 17px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 350px;
+    }
+    .btn3 {
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      height: 35px;
+      font-size: 17px;
+      align-items: center;
+    }
   }
 }

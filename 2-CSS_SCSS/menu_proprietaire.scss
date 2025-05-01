@@ -2,7 +2,10 @@
 
 .btn3 {
   @include btnmarron;
-  width: 160px;
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  align-items: center;
 }
 .btn1 {
   @include btnmarron;

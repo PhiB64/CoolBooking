@@ -46,6 +46,7 @@ button {
   width: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 input {
   width: 500px;
@@ -74,6 +75,7 @@ form {
   gap: 20px;
   align-items: flex-end;
   padding-left: 50px;
+  background-color: beige;
 }
 .checkbox1,
 .checkbox2 {
