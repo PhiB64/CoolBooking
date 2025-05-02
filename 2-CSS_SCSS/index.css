@@ -16,7 +16,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 header {
@@ -98,7 +97,7 @@ h5 {
 
 .st {
   color: #7b5c4d;
-  font-size: 15px;
+  font-size: 12px;
   padding-left: 20px;
   padding-bottom: 10px;
 }
@@ -118,7 +117,7 @@ h5 {
 }
 
 .textf {
-  font-size: 15px;
+  font-size: 12px;
   color: #7b5c4d;
 }
 
@@ -218,7 +217,8 @@ a {
 /*Media Queries*/
 @media (max-width: 1024px) {
   body {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
 }
 header {
@@ -281,7 +281,8 @@ footer {
 
 @media (max-width: 850px) {
   body {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
   header {
     flex-direction: column;
@@ -372,7 +373,8 @@ footer {
 }
 @media (max-width: 425px) {
   body {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
   .btn1 {
     width: 350px;
@@ -446,22 +448,23 @@ footer {
 }
 @media (max-width: 360px) {
   body {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
-  body header {
+  header {
     height: 15%;
   }
-  body main {
+  main {
     height: 75%;
   }
-  body .btn1 {
+  .btn1 {
     width: 300px;
     font-size: 18px;
     height: 40px;
     margin: 0;
     margin-bottom: 10px;
   }
-  body .btn2 {
+  .btn2 {
     width: 300px;
     height: 50px;
     font-size: 17px;
@@ -469,7 +472,7 @@ footer {
     margin: 0;
     margin-bottom: 350px;
   }
-  body .btn3 {
+  .btn3 {
     margin: 0;
     padding: 0;
     width: 100px;

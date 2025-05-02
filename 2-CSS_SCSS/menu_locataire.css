@@ -16,7 +16,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 header {
@@ -171,15 +170,19 @@ a {
 }
 
 main {
+  margin: 0;
+  padding: 0;
   justify-content: center;
   align-items: center;
   background-color: rgba(148, 111, 93, 0.8470588235);
 }
 
 .p2 {
+  padding: 0;
+  margin: 0;
+  display: flex;
   text-align: center;
   line-height: 100px;
-  margin-right: 200px;
 }
 
 .compte,
@@ -231,7 +234,8 @@ main {
 /*Media Queries*/
 @media (max-width: 1024px) {
   body {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
   header {
     height: 15%;
@@ -247,8 +251,7 @@ main {
   }
   .box2 {
     display: flex;
-    flex-direction: row;
-    background-color: bisque;
+    flex-direction: row-reverse;
   }
   .box2 .btn1 {
     width: 250px;
@@ -261,11 +264,7 @@ main {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-  }
-  .box2 .btn2 {
-    width: 450px;
-    font-size: 24px;
-    height: 60px;
+    margin-right: 30px;
   }
   .box2 .btn3 {
     width: 130px;
@@ -280,13 +279,64 @@ main {
   .box2 .textf {
     font-size: 12px;
   }
-  .box2 .title2 {
-    font-size: 40px;
-    padding: 0;
-    margin-right: 270px;
-  }
-  .box2 .p1,
   .box2 .p2 {
     font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    height: 15%;
+    width: 100vw;
+  }
+  main {
+    height: 75%;
+    width: 100vw;
+  }
+  footer {
+    height: 10%;
+    width: 100vw;
+  }
+  .box2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .box2 .btn1 {
+    width: 180px;
+    font-size: 20px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .box2 .profil {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  .btn3 {
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    align-items: center;
+  }
+  .title1 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .st,
+  .textf {
+    display: none;
+  }
+  .p2 {
+    font-size: 25px;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
   }
 }
