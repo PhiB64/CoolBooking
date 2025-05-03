@@ -78,66 +78,7 @@ a {
   text-decoration: none;
 }
 /*Media Queries*/
-@media (max-width: 1024px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
 
-  header {
-    height: 15%;
-    width: 100vw;
-  }
-
-  main {
-    height: 75%;
-    width: 100vw;
-  }
-  footer {
-    height: 10%;
-    width: 100vw;
-  }
-  .box2 {
-    display: flex;
-    flex-direction: row-reverse;
-
-    .btn1 {
-      width: 250px;
-      font-size: 23px;
-      height: 50px;
-      margin-right: 10px;
-
-      margin-bottom: 10px;
-    }
-
-    .profil {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: flex-end;
-      margin-right: 30px;
-    }
-
-    .btn3 {
-      width: 130px;
-      height: 40px;
-      font-size: 20px;
-      align-items: center;
-    }
-    .title1 {
-      font-size: 23px;
-    }
-    .st,
-    .textf {
-      font-size: 12px;
-    }
-
-    .p2 {
-      font-size: 30px;
-      padding: 0;
-      margin: 0;
-    }
-  }
-}
 @media (max-width: 425px) {
   body {
     margin: 0;
@@ -146,10 +87,24 @@ a {
   header {
     height: 15%;
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    .title1 {
+      font-size: 17px;
+    }
   }
   main {
+    * {
+      margin: 0;
+      padding: 0;
+    }
     height: 75%;
     width: 100vw;
+
+    .p2 {
+      margin: 0;
+      padding: 0;
+    }
   }
   footer {
     height: 10%;
@@ -158,23 +113,48 @@ a {
   .box2 {
     display: flex;
     flex-direction: row-reverse;
+
     .btn1 {
       width: 180px;
       font-size: 20px;
-      height: 40px;
+      height: 37px;
       margin-right: 10px;
       margin-bottom: 10px;
     }
     .profil {
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column-reverse;
-      justify-content: flex-end;
-      margin-right: 30px;
+      margin-right: 20px;
+
+      h2:first-of-type {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+
+      .photo {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        justify-content: center;
+
+        img {
+          width: 100px;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
     }
   }
   .btn3 {
-    width: 130px;
-    height: 40px;
+    width: 120px;
+    height: 37px;
     font-size: 20px;
     align-items: center;
   }

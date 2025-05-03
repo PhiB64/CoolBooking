@@ -2,10 +2,6 @@
 @import "./variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Jockey+One&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
 
 /*Structure de page*/
 body {
@@ -22,14 +18,31 @@ body {
 header {
   display: flex;
   background-color: #ffffff;
-  height: 15vh;
-  width: 100vw;
+  height: 15%;
+  width: 100%;
+}
+main {
+  display: flex;
+  height: 75%;
+  width: 100%;
+  background-color: rgba(148, 111, 93, 0.5019607843);
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .box1 {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   height: 100%;
   width: 50%;
 }
@@ -41,24 +54,6 @@ header {
   justify-content: end;
   align-items: end;
   justify-content: end;
-}
-
-main {
-  display: flex;
-  height: 75vh;
-  width: 100vw;
-  background-color: rgba(148, 111, 93, 0.5019607843);
-  flex-direction: column;
-}
-
-footer {
-  display: flex;
-  height: 10vh;
-  width: 100vw;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
 }
 
 /*Polices*/
@@ -93,28 +88,28 @@ h5 {
 .title1 {
   color: #7b5c4d;
   font-size: 25px;
+  line-height: 0;
   padding-left: 20px;
 }
 
 .st {
   color: #7b5c4d;
   font-size: 12px;
-  padding-left: 20px;
+  line-height: 0;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .p1 {
   color: #ffffff;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
   font-size: 40px;
-  padding-right: 110px;
 }
 
 .p2 {
   color: #ffffff;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
   font-size: 32px;
-  padding-left: 180px;
 }
 
 .textf {
@@ -126,65 +121,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-// .box3 {
-//   display: flex;
-//   height: 100%;
-//   width: 100%;
-//   flex-direction: column;
-//   align-items: flex-end;
-//   padding-top: 30px;
-// }
-
-// .box4 {
-//   display: flex;
-//   height: 100%;
-//   width: 100%;
-//   line-height: 40px;
-//   flex-direction: column;
-//   gap: 15px;
-//   justify-content: end;
-// }
-
-// .title1 {
-//   color: #7b5c4d;
-//   font-size: 25px;
-//   padding-left: 20px;
-// }
-
-// .st {
-//   color: #7b5c4d;
-//   font-size: 15px;
-//   padding-left: 20px;
-//   padding-bottom: 10px;
-// }
-
-// .title2 {
-//   color: #ffffff;
-//   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
-//   font-size: 50px;
-//   padding-right: 350px;
-// }
-
-// .p1 {
-//   color: #ffffff;
-//   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
-//   font-size: 40px;
-//   padding-right: 110px;
-// }
-
-// .p2 {
-//   color: #ffffff;
-//   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6352941176));
-//   font-size: 32px;
-//   padding-left: 180px;
-// }
-
-// .textf {
-//   font-size: 15px;
-//   color: #7b5c4d;
-// }
-// a {
-//   color: inherit;
-//   text-decoration: none;
-// }
+.btn3 {
+  @include btnmarron;
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  align-items: center;
+}

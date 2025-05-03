@@ -1,9 +1,5 @@
 @import "./global.scss";
-.btn3 {
-  @include btnmarron;
-  width: 160px;
-  padding: 0;
-}
+
 .btn1 {
   @include btnmarron;
   width: 160px;
@@ -12,109 +8,283 @@
   padding: 0;
 }
 main {
+  margin: 0;
+  padding: 0;
   flex-direction: row;
   background-color: $back-color2;
   align-items: center;
 
-  .p1 {
-    font-size: 35px;
-    margin-top: 40px;
-    margin-left: 100px;
-  }
   .box3 {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
+    align-items: center;
 
-    align-items: end;
+    .p1 {
+      font-size: 35px;
+      margin-top: 60px;
+    }
+
+    .image {
+      display: flex;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      justify-content: center;
+
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    p {
+      font-family: "Quicksand", sans-serif;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 16px;
+      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));
+      margin-top: 10px;
+    }
   }
 
   .box4 {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
     display: flex;
     width: 50%;
     height: 100%;
     flex-direction: column;
+    align-items: start;
 
     input,
     button {
       @include formul1;
     }
   }
-}
-button {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-input {
-  width: 500px;
-  padding-left: 20px;
-}
 
-form {
-  height: 70%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: flex-start;
-  align-items: end;
-  padding-bottom: 70px;
-}
+  .checkboxes {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
 
-#Locataire,
-#Propriétaire {
-  height: 25px;
-}
-.checkboxes {
-  display: flex;
-  height: 40%;
-  width: 100%;
-  gap: 20px;
-  align-items: flex-end;
-  padding-left: 50px;
-  background-color: beige;
-}
-.checkbox1,
-.checkbox2 {
-  align-items: center;
-  width: 200px;
-  display: flex;
-  flex-direction: row-reverse;
-  color: #ffffff;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));
-  font-size: 20px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  padding-bottom: 20px;
-}
-::placeholder {
-  color: $secondary-color;
-  opacity: 1;
-}
-.image {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  justify-content: center;
-  margin-right: 190px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.1);
+    .checkbox1,
+    .checkbox2 {
+      gap: 20px;
+      align-items: center;
+      width: 240px;
+      margin-left: 20px;
+
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      color: #ffffff;
+      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));
+      font-size: 20px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      transform: scale(1.5);
+    }
+  }
+
+  form {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: start;
+
+    ::placeholder {
+      color: $secondary-color;
+      opacity: 1;
+      padding-left: 20px;
+    }
+
+    button {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input {
+      width: 500px;
+    }
+  }
+
+  #Locataire,
+  #Propriétaire {
+    height: 25px;
   }
 }
 
-p {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 16px;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));
-  margin-right: 200px;
+/*Media Queries*/
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    header {
+      width: 100vw;
+      height: 15%;
+      .btn1 {
+        width: 140px;
+        margin-right: 30px;
+      }
+    }
+    main {
+      width: 100vw;
+      height: 75%;
+
+      form {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        justify-content: flex-start;
+        align-items: start;
+
+        ::placeholder {
+          color: $secondary-color;
+          opacity: 1;
+          padding-left: 20px;
+        }
+
+        button {
+          width: 200px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        input {
+          width: 350px;
+        }
+      }
+    }
+    footer {
+      width: 100vw;
+      height: 10%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+
+    header {
+      width: 100vw;
+      height: 15%;
+      margin: 0;
+      padding: 0;
+
+      .btn1 {
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      .title1 {
+        font-size: 20px;
+      }
+    }
+    main {
+      width: 100vw;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+
+      .box3 {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+
+        .p1 {
+          font-size: 25px;
+          margin: 0;
+          padding: 0;
+          margin-top: 10px;
+        }
+
+        .image {
+          display: flex;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
+          justify-content: center;
+
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        p {
+          font-family: "Quicksand", sans-serif;
+          font-weight: 600;
+          color: #ffffff;
+          font-size: 16px;
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6352941176));
+          margin-bottom: 30px;
+        }
+      }
+      .box4 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 60%;
+
+        input[type="checkbox"] {
+          width: 15px;
+          height: 15px;
+          transform: scale(1.5);
+          margin-left: 30px;
+        }
+
+        form {
+          margin: 0;
+          padding: 0;
+          margin-bottom: 40px;
+          margin-left: 40px;
+        }
+      }
+    }
+    .st,
+    .textf {
+      display: none;
+    }
+    footer {
+      width: 100vw;
+      height: 10%;
+    }
+  }
 }
